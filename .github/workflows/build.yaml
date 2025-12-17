@@ -76,11 +76,6 @@ jobs:
       - name: Tar app
         run: |
           tar -zcf "Yaagl HSR OS tar.gz" "Yaagl HSR OS.app"
-      - name: Upload artifact - app
-        uses: actions/upload-artifact@v3
-        with:
-          name: app
-          path: Yaagl.tar.gz
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
