@@ -75,17 +75,14 @@ jobs:
 
       - name: Tar app
         run: |
-          tar -zcf Yaagl.tar.gz Yaagl.app
-          tar -zcf "Yaagl OS.tar.gz" "Yaagl OS.app"
-          tar -zcf "Yaagl Honkai Global.tar.gz" "Yaagl Honkai Global.app"
           tar -zcf "Yaagl HSR OS tar.gz" "Yaagl HSR OS.app"
       - name: Upload artifact - app
         uses: actions/upload-artifact@v3
         with:
           name: app
           path: Yaagl.tar.gz
-      - name: Upload artifact - app-os
-        uses: actions/upload-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: app-os
+          name: yaagl-hsr-global
           path: "Yaagl HSR OS.app"
