@@ -50,4 +50,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: yaagl-hsr-global
-          path: "Yaagl HSR OS.tar.gz"
+          path: "Yaagl HSR OS tar.gz"
